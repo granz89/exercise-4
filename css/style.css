@@ -1,0 +1,178 @@
+/* This imports all of our partials to be compiled into one stylesheet, which you can than 
+attach to your html.
+
+All files that are previxed with an underscore "_name-of-file.scss" are called partials - meaning their css isn't 
+compiled unless its imported into and unprefixed .scss file. */
+/*This contains all our variables*/
+/*variables are placeholders for storing information that you want to resuse throughout your styles.
+You can store things like colors, font-stacks, or any css value you think you might want to reuse.
+SCSS uses the $ symbol to declare a variable */
+/* This file contains all our mixins */
+/* This is our main file */
+/* line 4, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+a {
+  color: #ffffff; }
+
+/* line 9, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.dropdown-container {
+  width: 400px;
+  padding: 0; }
+
+/* line 15, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.dropdown-btn {
+  width: 100%;
+  background: #3f6276;
+  padding: 1.5em;
+  border: 0 none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center; }
+
+/* line 26, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.dropdown-menu {
+  display: none;
+  background: #3f6276;
+  width: 100%;
+  overflow: hidden; }
+  /* line 31, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+  .dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    /* line 35, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+    .dropdown-menu ul li {
+      padding: 0.5em;
+      text-align: center; }
+    /* line 39, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+    .dropdown-menu ul a {
+      width: 100%;
+      display: block;
+      text-decoration: none; }
+      /* line 43, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+      .dropdown-menu ul a:hover {
+        color: #174d6c; }
+
+/* line 50, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+body {
+  background-color: #ffffff;
+  font: normal 100%/1.5 sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/* line 57, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+p {
+  font-family: "open sans", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center; }
+
+/* line 64, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.p1 {
+  font-family: "open sans", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -3rem; }
+
+/* line 72, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.intro {
+  background-color: #3f6276;
+  text-align: center;
+  padding: 6rem 0;
+  font-size: 8rem; }
+
+/* line 79, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.white-section {
+  font-size: 5em;
+  background-color: #ffffff;
+  color: #3f6276;
+  padding: 8rem 0;
+  margin: -1rem -2rem 0 -2rem; }
+
+/* line 88, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.blue-section {
+  font-size: 4em;
+  background-color: #3f6276;
+  color: #ffffff;
+  padding: 9rem 0;
+  margin-bottom: 0rem; }
+
+/* line 97, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.btn-section {
+  text-align: center;
+  padding-top: 5rem; }
+
+/* line 102, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+#primary-btn {
+  background-color: #3f6276;
+  display: inline-block;
+  margin: 2rem 3rem;
+  font-weight: bold;
+  width: 160px;
+  height: 160px;
+  font-size: 7rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  border: 3px solid #ffffff;
+  border-radius: 80px;
+  box-shadow: 0 0 0 5px #3f6276;
+  transition: all 0.5s ease-in-out; }
+  /* line 36, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/mixins */
+  #primary-btn:hover {
+    background-color: #174d6c;
+    box-shadow: 0 0 0 5px #174d6c; }
+
+@font-face {
+  font-family: 'custom-font';
+  src: url('../fonts/custom-font.eot?46597879');
+  src: url('../fonts/custom-font.eot?46597879#iefix') format('embedded-opentype'), url('../fonts/custom-font.woff?46597879') format('woff'), url('../fonts/custom-font.ttf?46597879') format('truetype'), url('../fonts/custom-font.svg?46597879#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?46597879#fontello') format('svg');
+  }
+}
+*/
+/* line 127, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "custom-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 158, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.icon-yes-cowboy:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 159, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.icon-no-cowboy:before {
+  content: '\e801'; }
+
+/* '' */
