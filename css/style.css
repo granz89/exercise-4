@@ -9,21 +9,92 @@ You can store things like colors, font-stacks, or any css value you think you mi
 SCSS uses the $ symbol to declare a variable */
 /* This file contains all our mixins */
 /* This is our main file */
-/* line 4, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 9, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 18, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 34, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 44, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 47, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+body {
+  line-height: 1; }
+
+/* line 50, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+ol, ul {
+  list-style: none; }
+
+/* line 53, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+blockquote, q {
+  quotes: none; }
+
+/* line 57, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 61, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 67, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 a {
   color: #ffffff; }
 
-/* line 8, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 71, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .menu {
   text-align: center; }
 
-/* line 13, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 75, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+.btn-section:focus {
+  outine: none; }
+
+/* line 79, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .dropdown-container {
   width: 100%;
   padding: 0 auto;
   margin: 0 auto; }
 
-/* line 20, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 86, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .dropdown-btn {
   width: 100%;
   background: #3f6276;
@@ -32,47 +103,48 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   color: #ffffff;
-  text-align: center; }
+  text-align: center;
+  outline: none; }
 
-/* line 31, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 98, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .dropdown-menu {
   display: none;
   background: #3f6276;
   width: 100%;
   overflow: hidden; }
-  /* line 36, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+  /* line 103, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
   .dropdown-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    /* line 40, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+    /* line 107, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
     .dropdown-menu ul li {
       padding: 0.75em;
       text-align: center; }
-      /* line 43, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+      /* line 110, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
       .dropdown-menu ul li:hover {
         background-color: #174d6c; }
-    /* line 47, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+    /* line 114, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
     .dropdown-menu ul a {
       width: 100%;
       display: block;
       text-decoration: none; }
 
-/* line 55, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 122, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 body {
   background-color: #ffffff;
   font: normal 100%/1.5 sans-serif;
   margin: 0;
   padding: 0; }
 
-/* line 62, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 129, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 p {
   font-family: "open sans", sans-serif;
   font-size: 3rem;
   color: #ffffff;
   text-align: center; }
 
-/* line 69, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 136, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .p1 {
   font-family: "open sans", sans-serif;
   font-size: 3rem;
@@ -80,14 +152,14 @@ p {
   text-align: center;
   margin-top: -3rem; }
 
-/* line 77, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 144, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .intro {
   background-color: #3f6276;
   text-align: center;
   padding: 6rem 0;
   font-size: 8rem; }
 
-/* line 84, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 151, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .white-section {
   font-size: 5em;
   background-color: #ffffff;
@@ -95,7 +167,7 @@ p {
   padding: 8rem 0;
   margin: -1rem -2rem 0 -2rem; }
 
-/* line 93, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 160, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .blue-section {
   font-size: 4em;
   background-color: #3f6276;
@@ -103,12 +175,12 @@ p {
   padding: 9rem 0;
   margin-bottom: 0rem; }
 
-/* line 102, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 169, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .btn-section {
   text-align: center;
   padding-top: 5rem; }
 
-/* line 107, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 174, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 #primary-btn {
   background-color: #3f6276;
   display: inline-block;
@@ -146,7 +218,7 @@ p {
   }
 }
 */
-/* line 132, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 199, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "custom-font";
   font-style: normal;
@@ -171,12 +243,12 @@ p {
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 163, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 230, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .icon-yes-cowboy:before {
   content: '\e800'; }
 
 /* '' */
-/* line 164, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
+/* line 231, /Users/agranieri/Documents/School/Graphic Design/Year 3/Year 3 Semester 2/Web Development V/exercises/exercise-4/scss/components/main */
 .icon-no-cowboy:before {
   content: '\e801'; }
 
